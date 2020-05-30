@@ -689,6 +689,13 @@ class Block:
             if self.name in block_styles['compare-porch-style']:
                 self.spr.set_label_attributes(size, True, 'center', 'bottom',
                                               i=i)
+            elif self.name in block_styles['clamp-style-hat']:
+                self.spr.set_margins(top=10 * self.scale)
+                self.spr.set_label_attributes(size, True, 'center', 'top',
+                                              i=i)
+            elif self.name in block_styles['clamp-style-hat-1arg']:
+                self.spr.set_label_attributes(size, True, 'center', 'top',
+                                              i=i)
             elif self.name in block_styles['number-style-porch']:
                 self.spr.set_label_attributes(size, True, 'right', 'bottom',
                                               i=i)
